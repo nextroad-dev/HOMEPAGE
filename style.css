@@ -1,41 +1,114 @@
+/* Archivo Black 字体样式 - 用于大标题 */
 .archivo-black-regular {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #7D5A50;
-  text-align: center;
-  font-size: 50px;
+  font-family: "Archivo Black", sans-serif; /* 使用 Archivo Black 字体 */
+  font-weight: 400; /* 字体粗细 */
+  font-style: normal; /* 正常字体样式 */
+  color: #7D5A50; /* 棕色文字颜色 */
+  text-align: left; /* 文字左对齐 */
+  font-size: 50px; /* 字体大小 */
 }
+
+/* Inconsolata 字体样式 - 用于正文和小标题 */
 .inconsolata-regular {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  color: #7D5A50;
-  font-style: normal;
-  font-variation-settings:
-    "width" 100;
-    text-align: center;
+  font-family: "Inconsolata", monospace; /* 使用 Inconsolata 等宽字体 */
+  font-optical-sizing: auto; /* 自动光学尺寸调整 */
+  font-weight: 400; /* 字体粗细 */
+  color: #7D5A50; /* 棕色文字颜色 */
+  font-style: normal; /* 正常字体样式 */
+  font-variation-settings: "width" 100; /* 字体变化设置 */
+  text-align: left; /* 文字左对齐 */
 }
+
+/* 页面背景样式 - 应用于 body 元素 */
 .background {
-    background-color: #FCDEC0;
-    margin-top: 160px;
-    margin-bottom: auto;
+    background-color: #FCDEC0; /* 米色背景 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh; /* 最小高度为视口高度 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
 }
+
+/* 主内容容器 - 包含所有标题和段落 */
+.title-p-container {
+    margin: 0; /* 移除外边距 */
+    max-width: 800px; /* 最大宽度限制 */
+    width: 100%; /* 响应式宽度 */
+    padding: 20px; /* 内边距 */
+}
+
+/* 主标题样式 */
+.title {
+    font-size: 50px; /* 字体大小 */
+    font-weight: 400; /* 字体粗细 */
+    margin: 0; /* 移除外边距 */
+    text-align: center; /* 文字居中对齐 */
+}
+
+/* 副标题样式 */
 .subtitle {
-    padding-block: 10px;
-    font-size: 25px;
-    margin-top: -20px;
-    margin-bottom: 5px;
-    font-weight: 300;
+    font-size: 25px; /* 字体大小 */
+    font-weight: 300; /* 字体粗细 */
+    text-align: center; /* 文字居中对齐 */
 }
+
+/* "Who am I?" 标题样式 */
 .who-am-i-title {
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-weight: 400; /* 字体粗细 */
+    font-size: 30px; /* 字体大小 */
 }
+
+/* "Find me at" 标题样式 */
 .find-me-at-title {
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-weight: 400; /* 字体粗细 */
+    font-size: 30px; /* 字体大小 */
+}
+
+/* 段落样式 */
+.p {
+    font-size: 20px; /* 字体大小 */
+    font-weight: 200; /* 字体粗细 */
+    margin: 0; /* 移除外边距 */
+}
+
+/* h3 和 p 的横向布局容器 */
+.h3-p-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: 10px 0; /* 上下外边距 */
+}
+
+/* h3-p-container 中的 h3 样式 */
+.h3-p-container h3 {
+    margin: 0; /* 移除外边距 */
+    margin-right: 50px; /* 右侧外边距，与右侧内容保持距离 */
+}
+
+/* h3-p-container 中的 p 样式 */
+.h3-p-container p {
+    margin: 0; /* 移除外边距 */
+}
+
+/* 段落组容器 - 用于垂直排列多个段落 */
+.p-group {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    align-items: flex-start; /* 子元素左对齐 */
+    gap: 5px; /* 子元素之间的间距 */
+}
+
+/* p-group 中的段落样式 */
+.p-group p {
+    margin: 0; /* 移除外边距 */
+    text-align: left; /* 文字左对齐 */
+}
+.h3-link-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin: 10px 0;
+    gap: 20px; /* 设置间距 */
 }
 
